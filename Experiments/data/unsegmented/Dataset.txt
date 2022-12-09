@@ -1,0 +1,1 @@
+# Download Covid and Normal image folders from https://www.kaggle.com/datasets/tawsifurrahman/covid19-radiography-database

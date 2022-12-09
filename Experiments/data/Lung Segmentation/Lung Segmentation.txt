@@ -1,0 +1,1 @@
+# Download CXR_png and masks image folders from https://www.kaggle.com/datasets/nikhilpandey360/chest-xray-masks-and-labels
