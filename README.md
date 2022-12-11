@@ -1,4 +1,4 @@
-# Covid-19 Detection using Segmentation, Deep Learning, Machine Learning 
+# Covid-19 Detection using Segmentation, Deep Learning and Machine Learning 
 Experiment - Segmentation:
 1) Download the Normal and Covid data without or without masks from [COVID-19 Radiography Database](https://www.kaggle.com/datasets/tawsifurrahman/covid19-radiography-database)
 2) Copy the folders (COVID, Normal) under \Experiments\data\unsegmented\
