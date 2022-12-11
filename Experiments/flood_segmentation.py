@@ -44,6 +44,7 @@ def mask_merge_segmented(uri_image, image_cluster):
     return new_image
 
 # Segment using flood technique
+# https://stackoverflow.com/a/67896956/12899060
 def flood(image):
     # Convert image to gray
     gray = rgb2gray(image)
