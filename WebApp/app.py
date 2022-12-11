@@ -58,7 +58,7 @@ def save_image(image, model_name="", patch="", fil=""):
       return "static/"+fil+"_"+model_name+""+patch+""
 
 # Run salt and pepper noise
-#https://stackoverflow.com/a/30609854/12899060
+# https://stackoverflow.com/a/30609854/12899060
 def salt_pepper(image, prob):
     output = np.zeros(image.shape, np.uint8)
     thres = 1 - prob
@@ -124,7 +124,7 @@ def original(path, patch, fil = ""):
     return p, path
 
 # Mean filter
-#https://stackoverflow.com/a/70541317/12899060
+# https://stackoverflow.com/a/70541317/12899060
 def mean_filter(arr, k):
     p = len(arr)
     diag_offset = np.linspace(-(k//2), k//2, k, dtype=int)
@@ -133,7 +133,7 @@ def mean_filter(arr, k):
     return (eL @ arr) / nrmlize
 
 # Select cluster index for image
-#https://www.kaggle.com/code/naim99/image-classification-clustering-step-by-step
+# https://www.kaggle.com/code/naim99/image-classification-clustering-step-by-step
 def select_cluster_index(clusters):
     minx = clusters[0].mean()
     index = 0
@@ -179,7 +179,7 @@ def k_means_cl(path, patch, fil= ""):
     return check_covid(label), k_means_path
 
 # Segment image using flood then predict
-#https://stackoverflow.com/a/67896956/12899060
+# https://stackoverflow.com/a/67896956/12899060
 def flood(path, patch, fil= ""):
     # Load model
     model = load_model('models/cnn_segmented_flood.h5')
@@ -283,6 +283,5 @@ def get_output():
             return render_template("index.html", prediction1 = prediction1, prediction2 = prediction2, prediction3 = prediction3, prediction4 = prediction4, img_path1 = img_path1, img_path2 = img_path2, img_path3 = img_path3, img_path4 = img_path4,  prediction1f = prediction1f, prediction2f = prediction2f, prediction3f = prediction3f, prediction4f = prediction4f, img_path1f = img_path1f, img_path2f = img_path2f , img_path3f = img_path3f, img_path4f = img_path4f , options = option)
 
 #%% Run app
-if __name__ == '__main__':
-	#app.debug = True
+if __name__ == '__main__': 
 	app.run() 
